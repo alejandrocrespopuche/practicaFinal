@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">practicaFinal</string>
+    <string name="volver">Volver</string>
+    <string name="nombre">NOMBRE:</string>
+    <string name="pais">PAIS:</string>
+    <string name="web">WEB:</string>
+    <string name="dominio">DOMINIO:</string>
+</resources>
