@@ -19,7 +19,7 @@ class MainViewModel : ViewModel() {
     fun fetchData() {
         viewModelScope.launch {
             try {
-                val country = "United States" // Puedes cambiar esto según tus necesidades
+                val country = "United States"
                 val url = "${ApiService.BASE_URL}search?country=$country"
 
                 Log.d("MyApp", "Request URL: $url")

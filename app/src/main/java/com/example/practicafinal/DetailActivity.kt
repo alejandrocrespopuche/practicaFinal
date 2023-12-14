@@ -71,19 +71,19 @@ class DetailActivity : AppCompatActivity() {
 
                 override fun updateDrawState(ds: TextPaint) {
                     super.updateDrawState(ds)
-                    // Cambiar el color del texto del enlace a blanco
+
                     ds.color = color
-                    ds.isUnderlineText = true // Opcional, para mostrar un subrayado
+                    ds.isUnderlineText = true
                 }
             }
 
             spannableString.setSpan(clickableSpan, linkStart, linkEnd, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
 
-            // Configurar el TextView para ser clickeable
+
             webTextView.text = spannableString
             webTextView.movementMethod = LinkMovementMethod.getInstance()
         } else {
-            // Handle the case where university is null (optional)
+
         }
 
         val volverButton = findViewById<Button>(R.id.appCompatButton)
