@@ -10,17 +10,17 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-
 class MainViewModel : ViewModel() {
 
     private val _universities = MutableLiveData<List<University>>()
     val universities: LiveData<List<University>> get() = _universities
 
-    fun fetchData() {
+    // Modifica fetchData para aceptar un parámetro String para el país
+    fun fetchData(country: String) {
         viewModelScope.launch {
             try {
-                val country = "United States"
-                val url = "${ApiService.BASE_URL}search?country=$country"
+
+                val url = "${ApiService.BASE_URL}search?country=${country.replace(" ", "%20")}"
 
                 Log.d("MyApp", "Request URL: $url")
 
@@ -29,7 +29,7 @@ class MainViewModel : ViewModel() {
                 }
 
                 if (universities.isNotEmpty()) {
-                    _universities.value = universities
+                    _universities.postValue(universities)
                     Log.d("MyApp", "Data loaded successfully: $universities")
                 } else {
                     Log.e("MyApp", "Empty response or unexpected format")
@@ -40,6 +40,5 @@ class MainViewModel : ViewModel() {
             }
         }
     }
-
-
 }
+

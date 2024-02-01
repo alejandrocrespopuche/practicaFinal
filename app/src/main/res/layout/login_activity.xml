@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -39,7 +38,7 @@
         style="@android:style/Widget.Material.Light.Button.Inset"
         android:layout_width="151dp"
         android:layout_height="64dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="116dp"
         android:text="@string/iniciar_sesi_n"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,24 +48,31 @@
         android:id="@+id/buttonRegister"
         android:layout_width="178dp"
         android:layout_height="40dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="128dp"
         android:text="@string/registrar_usuario"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="270dp"
         android:layout_height="119dp"
         android:layout_marginBottom="12dp"
+        android:fontFamily="@font/boogaloo"
         android:text="TextView"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextUsername"
-        tools:layout_editor_absoluteX="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
         tools:text="UNIVERSIDADES DEL MUNDO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

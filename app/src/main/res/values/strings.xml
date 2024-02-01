@@ -9,4 +9,6 @@
     <string name="contrase_a">Contraseña</string>
     <string name="iniciar_sesi_n">Iniciar Sesión</string>
     <string name="registrar_usuario">Registrar Usuario</string>
+    <string name="selecciona_el_pais">Selecciona el pais:</string>
+    <string name="buscar">Buscar</string>
 </resources>

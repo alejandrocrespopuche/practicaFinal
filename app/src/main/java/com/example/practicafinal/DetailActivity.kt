@@ -85,11 +85,5 @@ class DetailActivity : AppCompatActivity() {
         } else {
 
         }
-
-        val volverButton = findViewById<Button>(R.id.appCompatButton)
-        volverButton.setOnClickListener {
-
-            finish()
-        }
     }
 }
